@@ -21,7 +21,7 @@ io.on('connection', (socket) => {
 		console.log('client disconnected');
 	});
 
-	io.emit('setup', plots);
+	socket.emit('setup', plots);
 });
 
 process.stdin.resume();

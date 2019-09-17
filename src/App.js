@@ -10,7 +10,7 @@ import {
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const socket = openSocket('http://localhost:3001');
+const socket = openSocket(':3001');
 
 class App extends Component {
 	constructor(props) {
