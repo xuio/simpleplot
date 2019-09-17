@@ -5,17 +5,25 @@
   "dependencies": {
     "babel-loader": "^8.0.6",
     "bootstrap": "4.3.1",
+    "brace": "^0.11.1",
     "config": "^3.2.2",
+    "js-file-download": "^0.4.8",
+    "jsoneditor-react": "^1.0.1",
     "koa": "^2.8.1",
+    "koa-mount": "^4.0.0",
+    "koa-serve-list": "^1.0.1",
     "koa-static-server": "^1.4.0",
+    "moment": "^2.24.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
     "react-simple-state": "^1.0.2",
     "react-smoothie": "^0.10.2",
     "reactstrap": "^8.0.1",
+    "rw-stream": "^0.3.3",
     "socket.io": "^2.2.0",
-    "socket.io-client": "^2.2.0"
+    "socket.io-client": "^2.2.0",
+    "time-stamp": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
