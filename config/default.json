@@ -1,0 +1,22 @@
+{
+	"plots": [
+		{
+			"name": "plot1",
+			"type": "uint8",
+			"scale": 0.8
+		},
+		{
+			"name": "plot2",
+			"type": "uint16",
+			"scale": 0.8
+		},
+		{
+			"name": "plot3",
+			"type": "uint32",
+			"scale": 0.8
+		}
+	],
+	"server": {
+		"port": 3001
+	}
+}
