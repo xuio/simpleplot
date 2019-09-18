@@ -1,6 +1,4 @@
 const KoaStaticServer = require('koa-static-server');
-const KoaMount = require('koa-mount');
-const KoaServeList = require('koa-serve-list');
 const config = require('config');
 const fs = require('fs');
 const timestamp = require('time-stamp');
@@ -15,6 +13,18 @@ const logfile = `${timestamp('DD.MM.YYYY_HH:mm:ss')}.csv`;
 const stream = fs.createWriteStream(`logs/${logfile}`, {flags: 'a+'});
 
 stream.write(`# Hopper logfile created at: ${timestamp('DD.MM.YYYY HH:mm:ss')} \n`);
+
+let header = `# Plots: `;
+
+for(const plot of plots){
+	header += `${plot.name}, `;
+}
+
+header = header.slice(0, -2);
+
+header += `\n`;
+
+stream.write(header);
 
 app.use(KoaStaticServer({
 	rootDir: 'build',
